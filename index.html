@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku z rozwiązaniem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="aplikacja">
+        <h1>Sudoku z rozwiązaniem</h1>
+        <p>Wpisz liczby i rozwiąż sudoku</p>
+
+        <div id="plansza"></div>
+
+        <h3>Klawiatura</h3>
+        <div id="klawiatura">
+            <button onclick="wpiszLiczbe(1)">1</button>
+            <button onclick="wpiszLiczbe(2)">2</button>
+            <button onclick="wpiszLiczbe(3)">3</button>
+            <button onclick="wpiszLiczbe(4)">4</button>
+            <button onclick="wpiszLiczbe(5)">5</button>
+            <button onclick="wpiszLiczbe(6)">6</button>
+            <button onclick="wpiszLiczbe(7)">7</button>
+            <button onclick="wpiszLiczbe(8)">8</button>
+            <button onclick="wpiszLiczbe(9)">9</button>
+        </div>
+
+        <div class="przyciski">
+            <button onclick="usunLiczbe()">Usuń cyfrę</button>
+            <button onclick="rozwiazSudoku()">Rozwiąż sudoku</button>
+            <button onclick="wyczyscPlansze()">Wyczyść planszę</button>
+        </div>
+
+        <p id="komunikat">Wybierz pole na planszy.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
